@@ -142,7 +142,7 @@ header h1{
 }
 
 #overview{
-    padding: 25% 5% 5% 5%;
+    padding: 25% 10% 5% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,7 +150,7 @@ header h1{
 }
 
 .description{
-    margin-top: 30px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,11 +160,16 @@ header h1{
 .description-cont{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    margin: 30px 0 30px 0;
+    gap: 60px;
+    margin: 60px 0 30px 0;
     align-items: center;
 }
 
+.description-cont img{
+    width: 30vw;
+    height: auto;
+    border-radius: 10px;
+}
 .description-text{
     display: flex;
     flex-direction: column;
@@ -175,12 +180,13 @@ header h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 #trailer iframe{
     width: 80vw;
     height: 40vw;
+    border-radius: 10px;
 }
 
 #formulario-cont{
@@ -189,6 +195,50 @@ header h1{
     align-items: center;
     margin: 10% 5% 5% 5%;
     gap: 30ox;
+}
+
+/* ---------------------------- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--BlackColor);
+    font-family: var(--Text2);
+    padding: 1.5%;
+    align-items: center;
+    border-top: 4px solid var(--RedColor);
+    gap: 20px;
+    
+}
+
+.footer h4{
+    color: var(--whiteColor);
+    font-size: 1.5rem;
+}
+
+.footer ul {
+    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    justify-content: center;
+    
+}
+
+.footer a{
+    
+    text-decoration: none;
+    color:var(--RedColor);
+    transition: var(--transitionTime);
+}
+
+.footer i {
+    font-size: 3rem;
+}
+
+.footer a:hover{
+    transition: var(--transitionTime);
+    color: var(--whiteColor);
 }
 
 /* CHARACTER SELECTION */
