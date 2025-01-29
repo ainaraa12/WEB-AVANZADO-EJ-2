@@ -201,7 +201,7 @@ header h1{
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: var(--BlackColor);
+    background-color: black;
     font-family: var(--Text2);
     padding: 1.5%;
     align-items: center;
@@ -280,8 +280,59 @@ header h1{
     border-right: 40px solid transparent;
     
     border-top: 40px solid var(--whiteColor);
-    border-radius: 20px;
+    
 }
+
+.character-cards{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 24px;
+    padding: 1.5%;
+    top: 200px;
+    right: 100px;
+    width: 500px;
+    height: 450px;
+}
+
+.card-text, .stats-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stats-cont{
+    display: grid;
+}
+
+.card-text h3{
+    border-bottom: 2px solid var(--whiteColor);
+}
+
+/* .stats-cont :first-child{
+    border-bottom: 2px solid var(--whiteColor);
+}
+
+.stats-cont :last-child{
+    border-top: 2px solid var(--whiteColor);
+} */
+
+.stat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stat-line{
+    border-top: 1px solid var(--whiteColor);
+}
+
+/* .stat :first-child, .stat :last-child{
+    border: 0px;
+} */
+
 
 /* MAP SELECTION  */
 
