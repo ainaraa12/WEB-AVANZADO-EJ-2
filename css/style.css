@@ -336,6 +336,111 @@ header h1{
 
 /* MAP SELECTION  */
 
+.contenedor-carrusel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Oculta las cajas que se desbordan */
+    padding-left: 3%;
+    padding-top: 30px;
+    width: 97%; /* Ancho fijo */
+    height: 500px;
+}
+.carrusel, .carrusel2 {
+    
+    display: flex;
+    transition: transform 0.3s ease; /* Transición suave al mover el carrusel */
+    gap: 20px;
+}
+
+.caja-interna p{
+    font-family: var(--TextBody);
+    font-size: 1,2rem;
+    
+}
+  
+.caja1, .caja2 {
+    /* border: 6px solid var(--TextColor); */
+    background-color: rgb(0, 0, 0);
+    width: 400px; /* Ancho fijo */
+    height: 400px; /* Alto fijo */
+    display: flex;
+    flex-direction: column; /* Organiza las cajas internas en vertical */
+    box-sizing: border-box; /* Incluye el borde y padding en las dimensiones */
+    overflow: hidden; /* Evita que el contenido exceda el contenedor */
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+.caja1:hover, .caja2:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.caja-interna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+}
+
+.caja-interna-tape{
+    display: flex;
+    justify-content:baseline;
+    align-items: flex-end;
+    overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+}
+  
+.caja-interna:nth-child(1) {
+  flex: 1 1 10%; /* 10% de la altura de la caja principal */
+}
+
+.caja-interna:nth-child(2) {
+  flex: 1 1 70%; /* 70% de la altura de la caja principal */
+}
+
+.caja-interna:nth-child(3) {
+  flex: 1; /* 20% de la altura de la caja principal */
+  background-color: var(--BGcolor);
+}
+
+/* Imágenes */
+.caja-interna img {
+  width: auto; /* Mantiene la proporción de la imagen */
+  height: 100%; /* Ajusta la altura de la imagen a la caja interna */
+  object-fit: cover;
+}
+
+.flecha {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+.flecha.izquierda, .flecha.izquierda2{
+    left: 0;
+}
+  
+.flecha.derecha, .flecha.derecha2{
+    right: 0;
+}
+
+.clearance-tape-slide{
+    padding: 0.75rem;
+    
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--BGcolor),
+      var(--BGcolor) 15px,
+      var(--TextColor) 15px,
+      var(--TextColor) 30px
+    );
+    width: 100%;
+}
 
 /* CONFIGURATION */
 
