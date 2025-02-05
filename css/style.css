@@ -242,6 +242,12 @@ header h1{
 }
 
 /* CHARACTER SELECTION */
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
 
 .character-list{
     display: flex;
@@ -257,7 +263,7 @@ header h1{
     padding: 2%;
     transition: var(--transitionTime);
     border-radius: 24px;
-    width: 15%;
+    width: 400px;
     height: 500px;
     align-items: center;
 }
@@ -273,6 +279,12 @@ header h1{
     font-size: 2rem;
 }
 
+.card-box{
+    display: none;
+    
+}
+
+
 .arrow-down {
     width: 0; 
     height: 0; 
@@ -284,17 +296,14 @@ header h1{
 }
 
 .character-cards{
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
     border-radius: 24px;
-    padding: 1.5%;
-    top: 200px;
-    right: 100px;
-    width: 500px;
-    height: 450px;
+    padding: 5%;
+    width: 400px;
+    height: 500px;
 }
 
 .card-text, .stats-cont {
@@ -303,21 +312,9 @@ header h1{
     gap: 20px;
 }
 
-.stats-cont{
-    display: grid;
-}
-
 .card-text h3{
     border-bottom: 2px solid var(--whiteColor);
 }
-
-/* .stats-cont :first-child{
-    border-bottom: 2px solid var(--whiteColor);
-}
-
-.stats-cont :last-child{
-    border-top: 2px solid var(--whiteColor);
-} */
 
 .stat{
     display: flex;
@@ -328,10 +325,6 @@ header h1{
 .stat-line{
     border-top: 1px solid var(--whiteColor);
 }
-
-/* .stat :first-child, .stat :last-child{
-    border: 0px;
-} */
 
 
 /* MAP SELECTION  */
@@ -411,6 +404,7 @@ header h1{
 .flecha.derecha {
     right: 10px; 
 }
+
 /* CONFIGURATION */
 
 
