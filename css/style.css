@@ -7,6 +7,7 @@
     --RedColor: #B83E54;
     --BlackColor: #111111;
     --whiteColor: #FFFFFF;
+    --YellowColor: #ffee00;
 
     --transitionTime: 0.3s;
 }
@@ -201,6 +202,17 @@ header h1{
     margin: 10% 5% 5% 5%;
     gap: 30px;
 }
+
+/*
+.errorName {
+    font-family: var(--Text2);
+    color: var(--YellowColor);
+}
+
+.errorEmail {
+    font-family: var(--Text2);
+    color: var(--YellowColor);
+} */
 
 .btn-susc {
     padding: 5px 8px;
