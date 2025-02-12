@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     //Section HUD Maps-------------------------------------------
     let index = 0; 
-    const totalItems = $('.caja1').length; 
+    const totalItems = $('.caja1').length - 2; 
     const itemWidth = $('.caja1').outerWidth(true); 
 
     // Función para mover el carrusel
