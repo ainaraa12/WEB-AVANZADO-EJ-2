@@ -285,9 +285,16 @@ header h1{
     font-size: 2rem;
 }
 
+
 .card-box{
     display: none;
     
+}
+
+.character img{
+    height: 400px;
+    width: 250px;
+    object-fit: cover ;
 }
 
 
