@@ -43,6 +43,25 @@ $(document).ready(function () {
         $('.card-box[data-char="' + val_char + '"]').fadeIn();
     });
 
+            //To make active buttons.
+
+    var divContainer = document.getElementById("ActiveBtn");
+
+    var divs = divContainer.getElementsByClassName("character-box");
+
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+      
+          // If there's no active class
+          if (current.length > 0) {
+            current[0].className = current[0].className.replace(" active", "");
+          }
+      
+          // Add the active class to the current/clicked button
+          this.className += " active";
+        });
+    }
     //Section Google Forms--------------------------------
 
     // Forms

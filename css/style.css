@@ -279,6 +279,10 @@ header h1{
     transform: scale(1.1);
 }
 
+.active, .character-box:hover{
+    background-color: var(--RedColor);
+}
+
 .character-box h4{
     font-family: var(--Text1);
     color: var(--BlackColor);
