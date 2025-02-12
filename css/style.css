@@ -206,6 +206,29 @@ header h1{
     margin: 10% 5% 5% 5%;
     gap: 30px;
 }
+.contenedor-botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: var(--RedColor);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px;
+    transition: background-color 0.3s;
+}
+.button-main:hover {
+    background-color: rgb(255, 255, 255);
+  }
 
 /* ---------------------------- */
 .footer{
