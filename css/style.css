@@ -60,7 +60,7 @@ video::-webkit-media-controls-panel {display: none !important;}
     position: fixed;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding: 1% 0 0 0;
     font-family: var(--Text2);
     z-index: 90;
@@ -153,6 +153,10 @@ header h1{
     flex-direction: column;
     align-items: center;
 
+}
+
+#overview h3, h2{
+    text-align: center;
 }
 
 .description{
@@ -445,3 +449,89 @@ header h1{
 
 
 /* HUD */
+
+
+
+@media only screen and (max-width: 1100px){
+    /* MENU HAMBURGUESA */
+    .menu,
+    .menu nav {
+        display: block;
+        /* para qie dejen de ser flexbox */
+    }
+
+    .menu{
+        padding: 0;
+    }
+     
+    .menu img{
+        padding-top: 20px;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+ 
+    .menu-icon i {
+        font-size: 2em;
+        color: var(--whiteColor);
+        /* //se puede utilizar para estos iconos */
+    }
+ 
+    .menu-opt {
+        max-height: 0px;
+        flex-direction: column;
+        align-items: center;
+        /* para ocultar lo que se queda fuera del contenedor */
+        overflow: hidden;
+        transition: 0.35s;
+     
+    }
+    
+    .menu-opt a{ padding: 3%  ; }
+ 
+    .menu-opt > li:first-child{
+        margin-top: 20px;
+        /* para que no se corte la primera opcion */
+    }
+
+    .menu-opt > li:last-child{
+        margin-bottom: 20px;;
+    }
+ 
+    /* Cuando el input este seleccionado seleccionamos el hermano ul */
+    #menuToggle:checked ~ .menu-opt {
+ 
+        max-height: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 770px){
+
+    .description-cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description-cont img{
+        width: 75vw;
+    }
+}
+
+@media only screen and (max-width: 360px){
+
+    h2{font-size: 2rem;}
+    h3{font-size: 1.3rem;}
+
+    .footer h4{font-size: 1rem;}
+
+    .footer i {font-size: 1.5rem;}
+
+    .menu img{
+        width: 50px;
+        height: auto;
+    }
+}
