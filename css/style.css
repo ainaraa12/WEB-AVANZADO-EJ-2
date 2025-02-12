@@ -202,6 +202,28 @@ header h1{
     gap: 30px;
 }
 
+.btn-susc {
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: var(--RedColor);
+    color: var(--whiteColor);
+    text-decoration: none;
+    transition: var(--transitionTime);
+    font-size: 1.2rem;
+}
+
+.btn-susc:hover{
+    background-color:  var(--whiteColor);
+    color: var(--RedColor);
+    transform: scale(1.1);
+}
+
+.btn-susc li{transition: var(--transitionTime);}
+
+.btn-susc li:hover{
+    transform: scale(1.1);
+}
+
 /* ---------------------------- */
 .footer{
     display: flex;
