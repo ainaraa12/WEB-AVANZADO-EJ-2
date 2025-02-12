@@ -42,4 +42,44 @@ $(document).ready(function () {
         $('.card-box').hide();        
         $('.card-box[data-char="' + val_char + '"]').fadeIn();
     });
+
+    //Section Google Forms--------------------------------
+
+    // Forms
+    $('.form-form').on('submit', function(event) {
+        event.preventDefault();
+        $('#errorName').text('');
+        $('#errorEmail').text('');
+        const nombre = $('.name').val().trim();
+        const email = $('.email').val().trim();
+        let valido = true;
+        if (nombre === '' || !/^[A-Za-z\s]{3,20}$/.test(nombre)) {
+            $('#errorName').text('Por favor, introduce un nombre.');
+            valido = false;
+        }
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!regexEmail.test(email)) {
+            $('#errorEmail').text('Por favor, introduce un email correcto.');
+            valido = false;
+        }
+        if (valido) {
+            console.log({ nombre, email});
+            showModal();
+        }
+    });
+    
+    // Ventana modal - forms
+    function showModal() {
+        const susc = document.getElementById('suscWindow');
+        susc.classList.add('show-modal'); 
+            const closeModal = () => {
+            susc.classList.remove('show-modal');
+        };
+        document.querySelector('.close').onclick = closeModal;
+        window.onclick = function(event) {
+            if (event.target === susc) {
+                closeModal();
+            }
+        };
+    };
 });
