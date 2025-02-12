@@ -5,7 +5,7 @@
 
     /* Importante utilizar estos colores, porque si queremos cambiar algo, lo cambiamos aquí */
     --RedColor: #B83E54;
-    --BlackColor: #212121;
+    --BlackColor: #111111;
     --whiteColor: #FFFFFF;
 
     --transitionTime: 0.3s;
@@ -39,6 +39,10 @@ p{
     font-family: var(--Text2);
     color: var(--whiteColor);
 }
+
+a{text-decoration: none;}
+
+video::-webkit-media-controls-panel {display: none !important;}
 
 .demo-main{
     padding: 3%;
@@ -125,12 +129,13 @@ p{
     
 }
 
-.BG-video iframe{
+.BG-video video{
     position: absolute;  
     height: 40vw;
     width: 100%;
     z-index: -10;
     pointer-events: none;
+    object-fit: cover;
 }
 
 header h1{
@@ -324,6 +329,25 @@ header h1{
 
 .stat-line{
     border-top: 1px solid var(--whiteColor);
+}
+
+.buttons-demo{margin: 0 4% 0 4%;}
+
+.buttons-demo ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons-demo i{
+    color: var(--RedColor);
+    font-size: 3.5rem;
+    transition: var(--transitionTime);
+}
+
+.buttons-demo i:hover{
+    transform: scale(1.1);
+    color: var(--whiteColor);
 }
 
 
