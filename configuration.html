@@ -25,86 +25,85 @@
 <body>
     <header></header>
     <main class="configuration">   
-        <div class="volume">
+        <div class="confi-cont">
             <h2>VOLUME</h2>
 
             <div class="volume-meter">
-                <h3>MASTER - VOLUME</h3>
-                
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                      </div>
-                
+                <p>MASTER VOLUME</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  </div>
             </div>
-            <div class="menu-volume">
-                <h3>MENU - VOLUME</h3>
-                
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                      </div>
-                
+
+            <div class="volume-meter">
+                <p>MENU MUSIC VOLUME</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
             </div>
-            <div class="in-game-music">
-                <h3>IN - GAME - MUSIC</h3>
-                
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                      </div>
-                
+
+            <div class="volume-meter">
+                <p>IN-GAME MUSIC VOLUME</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
             </div>
-            <div class="sfx-volume">
-                <h3>SFX - VOLUME</h3>
-                
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                      </div>
-                
+
+            <div class="volume-meter">
+                <p>SFX VOLUME</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
             </div>
-            <div class="sfx-ambient">
-                <h3>SFX - AMBIENT - VOLUME</h3>
-                
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                      </div>
-                
+
+            <div class="volume-meter">
+                <p>SFX AMBIENT VOLUME</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
             </div>
+           
         </div>
 
-        <div class="graphics-game">
-            <h3>GRAPHICS - GAMES</h3>
-            <div class="graphics">
+        <div class="gg-cont">
+            <div class="gg-sect">
+                <h2>GRAPHICS</h2>
                 <div class="g-buttons">
+                    <p>RESOLUTION</p>
                     <div id="myDIV">
-                        <button class="btn">1</button>
-                        <button class="btn active">2</button>
-                        <button class="btn">3</button>
-                        <button class="btn">4</button>
+                        <button class="btn">1280p</button>
+                        <button class="btn active">1920p</button>
+                        <button class="btn">2560p</button>
+                        <button class="btn">3840p</button>
                       </div>
                 </div>
                 <div class="g-buttons">
+                    <p>GRAPHICS</p>
                     <div id="myDIV">
-                        <button class="btn">1</button>
-                        <button class="btn active">2</button>
-                        <button class="btn">3</button>
-                        <button class="btn">4</button>
-                      </div>
+                        <button class="btn">LOW</button>
+                        <button class="btn active">NORMAL</button>
+                        <button class="btn">HIGH</button>
+                        <button class="btn">ULTRA</button>
+                    </div>
                 </div>
                 
             </div>
-            <div class="game">
+            <div class="gg-sect">
+                <h2>GAME</h2>
                 <div class="difficult-buttons">
+                    <p>DIFFICULTY</p>
                     <div id="myDIV">
-                        <button class="btn">1</button>
-                        <button class="btn active">2</button>
-                        <button class="btn">3</button>
-                        <button class="btn">4</button>
+                        <button class="btn">STORYMODE</button>
+                        <button class="btn active">NORMAL</button>
+                        <button class="btn">HARD</button>
+                        <button class="btn">INFERNO</button>
                       </div>
                 </div>
             </div>
         </div>
 
-        <div class="controls">
-            <h3>CONTROLS</h3>
+        <div class="confi-cont">
+            <h2>CONTROLS</h2>
             <div class="controls-buttons">
                 <div id="myDIV">
                     <button class="btn">1</button>
@@ -112,20 +111,16 @@
                     <button class="btn">3</button>
                     <button class="btn">4</button>
                 </div>
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
+                
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider"></span>
-                  </label>
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
+                </label>
+                
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider"></span>
-                  </label>
+                </label>
             </div>   
         </div>
     </main>
