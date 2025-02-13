@@ -207,6 +207,16 @@ header h1{
     gap: 30px;
 }
 
+.form-name {
+    font-family: var(--Text2);
+    color: var(--YellowColor);
+}
+
+.form-email {
+    font-family: var(--Text2);
+    color: var(--YellowColor);
+}
+
 .btn-susc{
     padding: 5px 8px;
     border-radius: 8px;
