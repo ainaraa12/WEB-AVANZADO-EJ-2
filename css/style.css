@@ -558,3 +558,33 @@ header h1{
         height: auto;
     }
 }
+
+#configure {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2%;
+}
+
+#configure2 {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20%;
+}
+
+.ima {
+    width: 100%; /* Las imágenes se ajustan al tamaño del contenedor */
+    max-width: 400px; /* Máximo ancho que tendrán las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; 
+    
+}
+
+.ima2 {
+    
+}
