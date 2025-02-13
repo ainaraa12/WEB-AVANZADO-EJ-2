@@ -24,25 +24,121 @@
 </head>
 <body>
     <header></header>
-    <main>
-        <div id="configure">
-            <p>VOLUME</p>
-            <p>GRAPHICS</p>
-            <p>CONTROLS</p>
-        </div>
-        <div class="ima">
-            <img src="media/volume.png" alt="volume" class="imagen">
-        </div>
-        <div id="configure2">
-            <p>GAME</p>
+    <main class="configuration">   
+        <div class="volume">
+            <h2>VOLUME</h2>
+
+            <div class="volume-meter">
+                <h3>MASTER - VOLUME</h3>
+                
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                      </div>
+                
+            </div>
+            <div class="menu-volume">
+                <h3>MENU - VOLUME</h3>
+                
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                      </div>
+                
+            </div>
+            <div class="in-game-music">
+                <h3>IN - GAME - MUSIC</h3>
+                
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                      </div>
+                
+            </div>
+            <div class="sfx-volume">
+                <h3>SFX - VOLUME</h3>
+                
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                      </div>
+                
+            </div>
+            <div class="sfx-ambient">
+                <h3>SFX - AMBIENT - VOLUME</h3>
+                
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                      </div>
+                
+            </div>
         </div>
 
-        <div class="ima2">
-            <img src="media/game.png" alt="volume" class="imagen">
+        <div class="graphics-game">
+            <h3>GRAPHICS - GAMES</h3>
+            <div class="graphics">
+                <div class="g-buttons">
+                    <div id="myDIV">
+                        <button class="btn">1</button>
+                        <button class="btn active">2</button>
+                        <button class="btn">3</button>
+                        <button class="btn">4</button>
+                      </div>
+                </div>
+                <div class="g-buttons">
+                    <div id="myDIV">
+                        <button class="btn">1</button>
+                        <button class="btn active">2</button>
+                        <button class="btn">3</button>
+                        <button class="btn">4</button>
+                      </div>
+                </div>
+                
+            </div>
+            <div class="game">
+                <div class="difficult-buttons">
+                    <div id="myDIV">
+                        <button class="btn">1</button>
+                        <button class="btn active">2</button>
+                        <button class="btn">3</button>
+                        <button class="btn">4</button>
+                      </div>
+                </div>
+            </div>
         </div>
 
+        <div class="controls">
+            <h3>CONTROLS</h3>
+            <div class="controls-buttons">
+                <div id="myDIV">
+                    <button class="btn">1</button>
+                    <button class="btn active">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">4</button>
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                  <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+            </div>   
+        </div>
     </main>
-    <footer></footer>
+    <footer class="buttons-demo">
+        <ul>
+            <li>
+                <a href="configuration.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+            </li>
+            <li>
+                <a href="characters.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- cargamos archivo de JS-->
