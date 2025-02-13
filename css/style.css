@@ -655,44 +655,56 @@ header h1{
 /* HUD */
 * {box-sizing:border-box}
 
+.brain-icon{
+    font-size: 50px;
+}
+
+.menu-icons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.menu-icons i {
+    font-size: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .vida {
-  width: 30%; /* Full width */
+  width: 30%;
   background-color: var(--BlackColor);
 }
 
-.skills {
-    text-align: right; /* Right-align text */
+.life {
     padding-top: 10px; /* Add top padding */
     padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
 }
 
 .html {width: 90%; background-color: var(--RedColor);}
 
 .niveles {
-    width: 30%; /* Full width */
+    width: 30%; 
     background-color: var(--BlackColor);
 }
 
-.skills {
-    text-align: right; /* Right-align text */
+.levels {
     padding-top: 10px; /* Add top padding */
     padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
 }
-  
-.html {width: 90%; background-color: var(--BlackColor);}
+
+.html {width: 90%; background-color: green;}
 
 .cordura {
-    width: 30%; /* Full width */
+    width: 30%; 
     background-color: var(--BlackColor);
 }
 
-.skills {
-  text-align: right; /* Right-align text */
+.cord {
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
 }
 
 .html {width: 90%; background-color: var(--RedColor);}
