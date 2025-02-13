@@ -206,11 +206,67 @@ header h1{
     margin: 10% 5% 5% 5%;
     gap: 30px;
 }
+
+.btn-susc{
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: var(--RedColor);
+    color: var(--whiteColor);
+    text-decoration: none;
+    transition: var(--transitionTime);
+    font-size: 1.2rem;
+}
+
+.btn-susc img:hover{
+    transform: scale(1.3);
+    transition: var(--transitionTime);
+}
+
+.btn-susc:hover{
+    background-color:  var(--whiteColor);
+    color: var(--RedColor);
+    transform: scale(1.1);
+}
+
+.btn-susc li{transition: var(--transitionTime);}
+
+.btn-susc li:hover{
+    transform: scale(1.1);
+}
+
+.close{
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: var(--RedColor);
+    color: var(--whiteColor);
+    text-decoration: none;
+    transition: var(--transitionTime);
+    font-size: 1.2rem;
+}
+
+.close img:hover{
+    transform: scale(1.3);
+    transition: var(--transitionTime);
+}
+
+.close:hover{
+    background-color:  var(--whiteColor);
+    color: var(--RedColor);
+    transform: scale(1.1);
+}
+
+.close li{transition: var(--transitionTime);}
+
+.close li:hover{
+    transform: scale(1.1);
+}
+
 .contenedor-botones {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .button-main {
     display: flex;
     justify-content: center;
@@ -226,6 +282,7 @@ header h1{
     margin: 20px;
     transition: background-color 0.3s;
 }
+
 .button-main:hover {
     background-color: rgb(255, 255, 255);
   }
