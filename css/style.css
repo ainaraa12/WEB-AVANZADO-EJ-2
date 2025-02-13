@@ -207,12 +207,12 @@ header h1{
     gap: 30px;
 }
 
-.form-name {
+.user_name {
     font-family: var(--Text2);
     color: var(--YellowColor);
 }
 
-.form-email {
+.user_email {
     font-family: var(--Text2);
     color: var(--YellowColor);
 }
