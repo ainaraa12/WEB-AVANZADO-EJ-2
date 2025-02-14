@@ -68,60 +68,83 @@
         <div class="gg-cont">
             <div class="gg-sect">
                 <h2>GRAPHICS</h2>
-                <div class="g-buttons">
+                <div class="c-buttons">
                     <p>RESOLUTION</p>
-                    <div id="myDIV">
-                        <button class="btn">1280p</button>
-                        <button class="btn active">1920p</button>
-                        <button class="btn">2560p</button>
-                        <button class="btn">3840p</button>
-                      </div>
+                    <div class="myDIV">
+                        <div class="btn"><p>1280p</p></div>
+                        <div class="btn active"><P>1920p</P></div>
+                        <div class="btn"><p>2560p</p></div>
+                        <div class="btn"><p>3840p</p></div>
+                    </div>
                 </div>
-                <div class="g-buttons">
+                <div class="c-buttons">
                     <p>GRAPHICS</p>
-                    <div id="myDIV">
-                        <button class="btn">LOW</button>
-                        <button class="btn active">NORMAL</button>
-                        <button class="btn">HIGH</button>
-                        <button class="btn">ULTRA</button>
+                    <div class="myDIV">
+                        <div class="btn"><p>LOW</p></div>
+                        <div class="btn active"><P>NORMAL</P></div>
+                        <div class="btn"><p>HIGH</p></div>
+                        <div class="btn"><p>ULTRA</p></div>
                     </div>
                 </div>
                 
             </div>
             <div class="gg-sect">
                 <h2>GAME</h2>
-                <div class="difficult-buttons">
+                <div class="c-buttons">
                     <p>DIFFICULTY</p>
-                    <div id="myDIV">
-                        <button class="btn">STORYMODE</button>
-                        <button class="btn active">NORMAL</button>
-                        <button class="btn">HARD</button>
-                        <button class="btn">INFERNO</button>
-                      </div>
+                    <div class="myDIV">
+                        <div class="btn"><p>STORYMODE</p></div>
+                        <div class="btn active"><P>NORMAL</P></div>
+                        <div class="btn"><p>HARD</p></div>
+                        <div class="btn"><p>INFERNO</p></div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="confi-cont">
             <h2>CONTROLS</h2>
-            <div class="controls-buttons">
-                <div id="myDIV">
-                    <button class="btn">1</button>
-                    <button class="btn active">2</button>
-                    <button class="btn">3</button>
-                    <button class="btn">4</button>
+            <div>
+                <div class="c-buttons">
+                    <p>DIFFICULTY</p>
+                    <div class="myDIV">
+                        <div class="btn"><p>STORYMODE</p></div>
+                        <div class="btn active"><P>NORMAL</P></div>
+                        <div class="btn"><p>HARD</p></div>
+                        
+                    </div>
                 </div>
-                
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>   
+                <div class="volume-meter">
+                    <p>HORIZONTAL SENSITIVITY</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                </div>
+                <div class="switch-cont-max">
+                    <p>INVERT HORIZONTAL AXIS</p>
+                    <div class="switch-cont">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="s-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="volume-meter">
+                    <p>VERTICAL SENSITIVITY</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                </div>
+                <div class="switch-cont-max">
+                    <p>INVERT VERTICAL AXIS</p>
+                    <div class="switch-cont">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="s-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="buttons-demo">
@@ -137,6 +160,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- cargamos archivo de JS-->
-    <script src="javaScript/script.js"></script>
+    <script src="javaScript/config.js"></script>
 </body>
 </html>
