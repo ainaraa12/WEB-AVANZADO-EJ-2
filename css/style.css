@@ -714,7 +714,7 @@ input:checked + .s-slider:before {
 * {box-sizing:border-box}
 
 .brain-icon{
-    font-size: 50px;
+    font-size: 60px;
     position: absolute;
     top: 20px;
     left: 30px;
@@ -780,46 +780,57 @@ input:checked + .s-slider:before {
     background-color: #272727;
 }
 
-
-/* Contenedor barras */
-.skill-container {
+.barras-cont {
     width: 300px;
 }
 
-/* Nombre de la barra */
-/* .skill-name {
-    margin-left: 10px;
-} */
-
-/* Barra de fondo */
-.skill-bar {
-    width: 100%;
-    height: 20px;
-    background-color: #444;
-    border-radius: 10px;
-    margin-top: 5px;
-    overflow: hidden;
-}
-
-/* Relleno de la barra */
 .fill {
     height: 100%;
     transition: width 1s ease-in-out;
 }
 
-/* Colores personalizados */
-.life {
-    width: 80%; /* Ajusta el porcentaje según la cantidad */
+.barra-vida {
+    width: 100%;
+    height: 15px;
+    background-color: #444;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 110px;
+    overflow: hidden;
+}
+
+.barra-exp {
+    width: 100%;
+    height: 5px;
+    background-color: #444;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 110px;
+    overflow: hidden;
+}
+
+/* .barra-cordura {
+    width: 100%;
+    height: 15px;
+    background-color: #444;
+    border-radius: 10px;
+    margin-top: 7px;
+    overflow: hidden;
+} */
+
+.vida {
+    width: 80%;
     background-color: var(--RedColor);
 }
-.experience {
+.experiencia {
     width: 60%;
     background-color: var(--whiteColor);
 }
-.sanity {
+.cordura {
     width: 40%;
-    background-color: green;
+    background-color: var(--whiteColor);
 }
+
 
 
 @media only screen and (max-width: 1100px){
