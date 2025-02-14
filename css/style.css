@@ -702,9 +702,9 @@ header h1{
 .html {width: 90%; background-color: var(--RedColor);}
 
 .briefcase{
-    font-size: 50px;
+    font-size: 60px;
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     right: 30px;
     color: var(--whiteColor);
 }
@@ -713,16 +713,28 @@ header h1{
     font-size: 50px;
     position: absolute;
     bottom: 20px;
-    right: 120px;
+    right: 105px;
     color: var(--whiteColor);
+}
+
+.pills i {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #272727;
 }
 
 .gun{
     font-size: 50px;
     position: absolute;
     bottom: 20px;
-    right: 220px;
+    right: 200px;
     color: var(--whiteColor);
+}
+
+.gun i {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #272727;
 }
 
 @media only screen and (max-width: 1100px){
