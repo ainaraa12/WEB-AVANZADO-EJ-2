@@ -657,12 +657,15 @@ header h1{
 
 .brain-icon{
     font-size: 50px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
 }
 
 .menu-icons{
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 30px;
     display: flex;
     gap: 10px;
 }
@@ -679,8 +682,8 @@ header h1{
 }
 
 .life {
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
+    padding-top: 10px; 
+    padding-bottom: 10px; 
 }
 
 .html {width: 90%; background-color: var(--RedColor);}
@@ -691,8 +694,8 @@ header h1{
 }
 
 .levels {
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
+    padding-top: 10px; 
+    padding-bottom: 10px; 
 }
 
 .html {width: 90%; background-color: green;}
@@ -705,6 +708,13 @@ header h1{
 .cord {
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
+}
+
+.eye{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
 }
 
 .html {width: 90%; background-color: var(--RedColor);}
