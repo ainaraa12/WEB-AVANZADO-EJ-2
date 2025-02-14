@@ -701,7 +701,7 @@ input:checked + .s-slider:before {
 * {box-sizing:border-box}
 
 .brain-icon{
-    font-size: 60px;
+    font-size: 70px;
     position: absolute;
     top: 20px;
     left: 30px;
@@ -724,7 +724,7 @@ input:checked + .s-slider:before {
 }
 
 .eye{
-    font-size: 60px;
+    font-size: 70px;
     position: absolute;
     bottom: 20px;
     left: 30px;
@@ -777,7 +777,8 @@ input:checked + .s-slider:before {
 }
 
 .barra-vida {
-    width: 100%;
+    position: absolute;
+    width: 30%;
     height: 15px;
     background-color: #444;
     border-radius: 10px;
@@ -787,22 +788,24 @@ input:checked + .s-slider:before {
 }
 
 .barra-exp {
-    width: 100%;
+    position: absolute;
+    width: 30%;
     height: 5px;
     background-color: #444;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: 60px;
     margin-left: 110px;
     overflow: hidden;
 }
 
 .barra-cordura {
-    width: 40%;
-    height: 15px;
+    position: absolute;
+    width: 10%;
+    height: 22px;
     background-color: #444;
     border-radius: 10px;
-    margin-top: 380px;
-    margin-left: 5px;
+    margin-top: 425px;
+    margin-left: 3px;
     overflow: hidden;
     transform: rotate(-90deg);
 }
