@@ -43,6 +43,11 @@ p{
 
 a{text-decoration: none;}
 
+button{
+    border: none;
+    outline: none;
+}
+
 video::-webkit-media-controls-panel {display: none !important;}
 
 .demo-main{
@@ -207,6 +212,22 @@ header h1{
     gap: 30px;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: black ;
+    padding: 2%;
+    border-radius: 22px;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .user_name {
     font-family: var(--Text2);
     color: var(--YellowColor);
@@ -224,51 +245,14 @@ header h1{
     color: var(--whiteColor);
     text-decoration: none;
     transition: var(--transitionTime);
-    font-size: 1.2rem;
-}
-
-.btn-susc img:hover{
-    transform: scale(1.3);
-    transition: var(--transitionTime);
+    font-size: 2rem;
+    font-family: var(--Text1);
 }
 
 .btn-susc:hover{
     background-color:  var(--whiteColor);
+    transform: scale(1.1);
     color: var(--RedColor);
-    transform: scale(1.1);
-}
-
-.btn-susc li{transition: var(--transitionTime);}
-
-.btn-susc li:hover{
-    transform: scale(1.1);
-}
-
-.close{
-    padding: 5px 8px;
-    border-radius: 8px;
-    background-color: var(--RedColor);
-    color: var(--whiteColor);
-    text-decoration: none;
-    transition: var(--transitionTime);
-    font-size: 1.2rem;
-}
-
-.close img:hover{
-    transform: scale(1.3);
-    transition: var(--transitionTime);
-}
-
-.close:hover{
-    background-color:  var(--whiteColor);
-    color: var(--RedColor);
-    transform: scale(1.1);
-}
-
-.close li{transition: var(--transitionTime);}
-
-.close li:hover{
-    transform: scale(1.1);
 }
 
 .contenedor-botones {
@@ -288,14 +272,17 @@ header h1{
     text-decoration: none;
     border-radius: 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 3rem;
     margin: 20px;
     transition: background-color 0.3s;
+    font-family: var(--Text1);
+    font-style: normal;
 }
 
 .button-main:hover {
     background-color: rgb(255, 255, 255);
-  }
+    color: #B83E54;
+}
 
 /* ---------------------------- */
 .footer{
@@ -390,7 +377,7 @@ header h1{
 }
 
 .character img{
-    height: 400px;
+    height: 350px;
     width: 250px;
     object-fit: cover ;
 }
@@ -480,7 +467,7 @@ header h1{
 }
 
 .caja1 {
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
     width: 300px; 
     height: 300px; 
     display: flex;
@@ -494,7 +481,7 @@ header h1{
 
 .caja1:hover {
     transform: scale(1.05); 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px var(--RedColor);
     cursor: pointer;
 }
 
@@ -506,7 +493,7 @@ header h1{
 }
 
 .caja-interna img {
-    width: 100%; 
+    /* width: 100%;  */
     height: 100%; 
     object-fit: cover; 
 }
@@ -637,10 +624,10 @@ header h1{
     cursor: pointer;
     border: none;
     width: 100px;
-    text-align: center;
     border-radius: 7px;
     transition: var(--transitionTime);
     opacity: 0.5;
+    justify-items: center;
 }
 
 .btn:hover{
@@ -902,6 +889,15 @@ input:checked + .s-slider:before {
     .description-cont img{
         width: 75vw;
     }
+
+    .contenedor-botones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-main{
+        font-size: 1.5rem;
+        width: 50vw;}
 }
 
 @media only screen and (max-width: 360px){
@@ -916,6 +912,10 @@ input:checked + .s-slider:before {
     .menu img{
         width: 50px;
         height: auto;
+    }
+
+    .btn-susc{
+        font-size: 1.5rem;
     }
 }
 
