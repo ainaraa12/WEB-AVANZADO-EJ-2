@@ -657,6 +657,50 @@ header h1{
     border-radius: 5px;
 }
 
+.eye{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: var(--whiteColor);
+}
+
+.briefcase{
+    font-size: 60px;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    color: var(--whiteColor);
+}
+
+.pills{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 105px;
+    color: var(--whiteColor);
+}
+
+.pills i {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #272727;
+}
+
+.gun{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+    color: var(--whiteColor);
+}
+
+.gun i {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #272727;
+}
+
 .vida {
   width: 30%;
   background-color: var(--BlackColor);
@@ -689,14 +733,6 @@ header h1{
 .cord {
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
-}
-
-.eye{
-    font-size: 50px;
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-    color: var(--whiteColor);
 }
 
 .html {width: 90%; background-color: var(--RedColor);}
