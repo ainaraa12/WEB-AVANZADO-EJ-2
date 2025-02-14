@@ -639,6 +639,7 @@ header h1{
     position: absolute;
     top: 20px;
     left: 30px;
+    color: var(--whiteColor);
 }
 
 .menu-icons{
@@ -647,6 +648,7 @@ header h1{
     right: 30px;
     display: flex;
     gap: 10px;
+    color: var(--whiteColor);
 }
 
 .menu-icons i {
@@ -694,10 +696,34 @@ header h1{
     position: absolute;
     bottom: 20px;
     left: 30px;
+    color: var(--whiteColor);
 }
 
 .html {width: 90%; background-color: var(--RedColor);}
 
+.briefcase{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    color: var(--whiteColor);
+}
+
+.pills{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+    color: var(--whiteColor);
+}
+
+.gun{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 220px;
+    color: var(--whiteColor);
+}
 
 @media only screen and (max-width: 1100px){
     /* MENU HAMBURGUESA */
