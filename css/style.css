@@ -373,7 +373,7 @@ header h1{
     transform: scale(1.1);
 }
 
-.active, .character-box:hover{
+.activated, .character-box:hover{
     background-color: var(--RedColor);
 }
 
@@ -535,121 +535,100 @@ header h1{
     right: 10px; 
 }
 
-/* CONFIGURATION */
+
+
+/* CONFIGURATION --------------------------------------------------*/
+
+.configuration{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3%;
+    gap: 30px;
+
+}
+
+.confi-cont{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 32px;
+    padding: 30px;
+    width: 500px;
+    height: 600px;
+}
+
+.gg-cont{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 30px;
+}
+
+.gg-sect{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    padding: 30px;
+}
+
+.volume-meter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 15px 0;
+}
+
 .slidecontainer {
-    width: 100%; 
-  }
-  
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
     transition: opacity .2s;
-  }
-  
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
+    width: 15px;
+    height: 25px;
+    background: var(--RedColor);
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+}
 
-  .btn {
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--RedColor);
+    cursor: pointer;
+}
+
+.btn {
     border: none;
     outline: none;
     padding: 10px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
-  }
+}
   
-  /* Style the active class (and buttons on mouse-over) */
-  .active, .btn:hover {
+/* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
     background-color: #666;
     color: white;
-  }
+}
+
 
   
 /* HUD */

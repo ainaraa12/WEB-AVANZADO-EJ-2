@@ -43,7 +43,7 @@ $(document).ready(function () {
         $('.card-box[data-char="' + val_char + '"]').fadeIn();
     });
 
-            //To make active buttons.
+    //To make active buttons.
 
     var divContainer = document.getElementById("ActiveBtn");
 
@@ -51,15 +51,15 @@ $(document).ready(function () {
 
     for (var i = 0; i < divs.length; i++) {
         divs[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
+          var now = document.getElementsByClassName("activated");
       
           // If there's no active class
-          if (current.length > 0) {
-            current[0].className = current[0].className.replace(" active", "");
+          if (now.length > 0) {
+            now[0].className = now[0].className.replace(" activated", "");
           }
       
           // Add the active class to the current/clicked button
-          this.className += " active";
+          this.className += " activated";
         });
     }
     //Section Google Forms--------------------------------
@@ -102,33 +102,21 @@ $(document).ready(function () {
         };
     };
 
+    // Get the container element
     var btnContainer = document.getElementById("myDIV");
 
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("btn");
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("btn");
 
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+    
 });
